@@ -1,5 +1,3 @@
-  Locker
-
 Locker
 ======
 
@@ -11,30 +9,6 @@ Main Features
 *   **Mouse and Keyboard Locking**: Prevents others from accessing your device without permission.
 *   **Easy to Use**: A simple interface for locking and unlocking.
 *   **Flexible Settings**: Customizable to meet user needs.
-
-Project Structure
------------------
-
-Locker/
-│
-├── .gitignore            # File to ignore certain files in Git
-├── .vscode               # Folder for Visual Studio Code configuration
-├── build                 # Folder for build files
-│   ├── build.bat        # Script to build the application
-│   ├── locker.spec      # Specification for the Locker application
-│   ├── unlocker.spec    # Specification for the Unlocker application
-│
-├── images                # Folder to store images
-│   ├── lock.jpg         # Image related to the application
-│
-├── LICENSE.txt           # License file for the project
-├── locker.py             # Main script for the Locker application
-├── unlocker.py           # Script to unlock
-├── pnputil.py            # Module to manage devices
-├── pnp\_controller.py     # Controller for plug and play devices
-├── \_\_pycache\_\_           # Folder that stores Python cache files
-└── README.md             # Project documentation
-    
 
 Installation
 ------------
