@@ -1,3 +1,3 @@
 @echo off
-pyinstaller unlocker.py --onefile --distpath ./build --target-architecture x64
-pyinstaller locker.py --onefile --distpath ./build --target-architecture x64 --add-data "lock.jpg;."
+pyinstaller  --onefile --distpath ./build --target-architecture x64 unlocker.py
+pyinstaller --onefile --distpath ./build --target-architecture x64 locker.py 

@@ -1,9 +1,0 @@
-Microsoft PnP Utility
-
-Failed to disable device:  ACPI\MSFT0001\4&39d5e741&0
-Cannot disable critical system device.
-
-********************************** WARNING **********************************
-Interfering with critical system device may adversely impact system operation.
-This may affect your ability to boot Windows or access vital hardware resources.
-

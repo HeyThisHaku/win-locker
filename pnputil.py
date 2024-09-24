@@ -4,10 +4,10 @@ from winapi.guid import GUID
 from os import system
 
 def disable_devices(instance_id:str):
-    return system("pnputil /disable-device \"{}\" > null".format(instance_id))
+    return system("pnputil /disable-device \"{}\" > %temp%/locker".format(instance_id))
 
 def enable_devices(instance_id:str):
-    return system("pnputil /enable-device \"{}\" > null".format(instance_id))
+    return system("pnputil /enable-device \"{}\" > %temp%/unlocker".format(instance_id))
 
 def get_devices(connected=True, instance_id: str = None, class_guid: str = None, class_name: str = None):
     if instance_id:

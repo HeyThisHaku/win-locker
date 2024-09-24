@@ -1,12 +1,20 @@
 from pnp_controller import lock_mouse,lock_keyboard
 from tkinter import *
 import pyfiglet
-from os import walk 
-from rich.console import Console
 import os
 import sys
 
-con = Console()
+text = """
+ ##::::::::'#######:::'######::'##:::'##:'########:'########::
+ ##:::::::'##.... ##:'##... ##: ##::'##:: ##.....:: ##.... ##:
+ ##::::::: ##:::: ##: ##:::..:: ##:'##::: ##::::::: ##:::: ##:
+ ##::::::: ##:::: ##: ##::::::: #####:::: ######::: ##:::: ##:
+ ##::::::: ##:::: ##: ##::::::: ##. ##::: ##...:::: ##:::: ##:
+ ##::::::: ##:::: ##: ##::: ##: ##:. ##:: ##::::::: ##:::: ##:
+ ########:. #######::. ######:: ##::. ##: ########: ########::
+........:::.......::::......:::..::::..::........::........:::
+ YOUR KEYBOARD AND MOUSE ARE LOCKED
+"""
 
 def resource_path(relative_path):
     try:
@@ -17,12 +25,11 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 def show_ui():
-    banner = pyfiglet.figlet_format("LOCKED",font="banner3-D")
-    con.print(banner,"YOUR KEYBOARD AND MOUSE ARE LOCKED",style="bold red")
-    input("")
+    print(text)
+    input("Press enter for close this prompt, Tools Credit by Haku, Maintain w/ NA")
 
 
 if __name__ == "__main__":
-    lock_mouse()
     lock_keyboard()
+    lock_mouse()
     show_ui()

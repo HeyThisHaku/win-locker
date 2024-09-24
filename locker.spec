@@ -8,7 +8,7 @@ a = Analysis(
     ['locker.py'],
     pathex=[],
     binaries=[],
-    datas=[('lock.jpg', '.')],
+    datas=[],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
