@@ -37,6 +37,6 @@ def save_pid():
 
 if __name__ == "__main__":
     lock_keyboard()
-    # lock_mouse()
+    lock_mouse()
     save_pid()
     show_ui()
